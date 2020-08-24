@@ -1,0 +1,103 @@
+
+//========================MODELO VIEJO===================//
+
+//Otra consulta más
+// $modelo = New Usuarios();
+// $registro = $modelo->where ("id", "=", 12 )->get();
+// echo "<pre>";
+// var_dump($registro);
+// echo "<pre>";
+
+// ==================================================
+// Nuevas formas para trabajar  con el nuevo metodo  
+// ==================================================
+
+//=========CONSULTAS=================
+
+// $modeloUsuario = New Usuarios();
+// $lista =  $modeloUsuario->get();
+// var_dump(($lista));
+
+
+// o más simple de esta manera:
+
+// echo "<pre>";
+// var_dump((new Usuarios()) ->get());
+// echo "<pre>";
+
+//-------------------------------------------
+// $modelo = New Usuarios();
+// $registro = $modelo->where ("id", "=", 12 )->get();
+
+// echo "<pre>";
+// var_dump($registro);
+// echo "<pre>";
+
+//=========CONSULTAS=================
+
+
+//=============Métodos de Insersión de Data===============
+
+// Método 1.
+// $modelo = new Usuarios();
+// $modelo->setName("Gebriel");
+// $modelo->setPhone(53);
+// $modelo->setAdress("Mi casa prueba 2 ");
+// $modelo->setEmail("prueba3@gmail.com");
+// $modelo->insert();
+
+// // Método 2 
+// $modelo = new Usuarios();
+// $modelo->insert([
+//     "name" => "Prueba New",
+//     "phone" => 1111,
+//     "adress" => "111111111 3",
+//     "email" => "1111111111@3.com"
+// ]);
+
+
+
+
+
+
+
+
+
+// OLD FORM
+
+// $crud = new Crud("user");
+// ==============================
+// Método para hacer Update
+
+// $filasAfectadas = $crud->where("id", "=", 6)->update([
+//     "name" => "Prueba 6"
+// ]);
+// =============================
+
+// ==============================
+// Método para hacer Delete 
+
+// $eliminados=$crud->where("id","=",2 )->Delete();
+// ==============================
+
+// ==============================
+// Método para hacer Insert 
+
+// $id=$crud->Insert([
+//     "name" => "prueba3",
+//     "phone" => "554",
+//     "adress" => "prueba 3",
+//     "email" => "pruebacorre@3.com"
+// ]);
+// ==============================
+
+// echo"EL ID INSERTADO ES : " . $id;
+// echo "FILAS AFECTADAS: "  . $filasAfectadas .  "ELIMINADOS:" . $eliminados;
+// echo "<br/>";
+// $lista = $crud->Get();
+// echo "<pre>";
+// var_dump($lista);
+// echo "</pre>";
+
+
+
