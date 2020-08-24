@@ -35,6 +35,6 @@ $controladorUsuarios = new ControladorUsuarios();
 $respuesta = $controladorUsuarios->listarUsuarios()->json();
 echo ($respuesta);
 
-
+$hola= 'prueba';
 
 ?>
