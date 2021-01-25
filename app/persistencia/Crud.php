@@ -26,11 +26,12 @@ class Crud
         }
     }
 
-    public function first(){
-        $lista=$this->get();
-        if(count($lista)>0){
+    public function first()
+    {
+        $lista = $this->get();
+        if (count($lista) > 0) {
             return $lista[0];
-        }else{
+        } else {
             return null;
         }
     }

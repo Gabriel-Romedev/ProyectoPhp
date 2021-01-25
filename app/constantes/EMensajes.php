@@ -1,6 +1,6 @@
 <?php
 
-class Emensajes
+class EMensajes
 {
     const CORRECTO = "CORECTO";
     const ERROR = "ERROR";
@@ -14,21 +14,21 @@ class Emensajes
     public static function getMensaje($codigo)
     {
         switch ($codigo) {
-            case Emensajes::CORRECTO:
+            case EMensajes::CORRECTO:
                 return new Respuesta(1, "Se ha realizado la operacion de manera correcta.");
-            case Emensajes::INSERCION_EXITOSA:
+            case EMensajes::INSERCION_EXITOSA:
                 return new Respuesta(1, "Se ha insertado el registro con éxito.");
-            case Emensajes::ACTUALIZACION_EXITOSA:
+            case EMensajes::ACTUALIZACION_EXITOSA:
                 return new Respuesta(1, "Se ha actualizado  el registro con éxito.");
-            case Emensajes::ELIMINACION_EXITOSA:
+            case EMensajes::ELIMINACION_EXITOSA:
                 return new Respuesta(1, "Se ha eliminado  el registro con éxito.");
-            case Emensajes::DELETE_ERROR:
+            case EMensajes::DELETE_ERROR:
                 return new Respuesta(1, "Se ha  producido un error al realizar el delete.");
-            case Emensajes::ERROR:
+            case EMensajes::ERROR:
                 return new Respuesta(-1, "Se ha producido un error al realizar la operación.");
-            case Emensajes::INSERT_ERROR:
+            case EMensajes::INSERT_ERROR:
                 return new Respuesta(-1, "Se ha producido un error al realizar el insert.");
-            case Emensajes::UPDATE_ERROR:
+            case EMensajes::UPDATE_ERROR:
                 return new Respuesta(-1, "Se ha producido un error al realizar el update.");
         }
     }
